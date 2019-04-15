@@ -17,18 +17,18 @@
     <% 
     console.log("----")
     console.log("Pagina opgevraagd.")
-    var currentDate = new Date();
+
 
     if(day == 0) {
         var datum = "Now"
     } else if (day < 7) {
         var days = ['Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag', 'Zondag'];
+        var currentDate = new Date();
         var datum = "aanstaande " + days[(parseInt(currentDate.getDay()) + parseInt(day)) - 1];
     } else {
         console.log("Helaas is het niet mogelijk om langer dan een week vooruit te kijken")
     }
 
-    var location = weatherData.location.city;
 
     if(day == 0) {
         var temperature = weatherData.current_observation.condition.temperature;
@@ -36,6 +36,7 @@
         var temperature = "tussen " + weatherData.forecasts[day].low + " en " + weatherData.forecasts[day].high;
     }
 
+    var location = weatherData.location.city;
     var status = weatherData.current_observation.condition.text;
     var windsnelheid = weatherData.current_observation.wind.speed;
     var sunrise = weatherData.current_observation.astronomy.sunrise;
@@ -73,8 +74,8 @@
         <p><b>Navigatie </b></p>
         <button id="button3">vandaag</button>
         <button id="button4">meer informatie</button>
-        <button id="button1">dag vooruit</button>
         <button id="button2">dag achteruit</button>
+        <button id="button1">dag vooruit</button>
     </div>
 
     
