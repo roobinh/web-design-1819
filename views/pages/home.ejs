@@ -10,6 +10,9 @@
 </header>
 
 <main>
+
+    <audio id="audio" volume="0.1" src="/mp3/nature.mp3" loop="loop"></audio>
+
     <!-- Data manipulatie -->
     <% 
     console.log("----")
@@ -17,7 +20,7 @@
     var currentDate = new Date();
 
     if(day == 0) {
-        var datum = "nu"
+        var datum = "Now"
     } else if (day < 7) {
         var days = ['Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag', 'Zondag'];
         var datum = "aanstaande " + days[(parseInt(currentDate.getDay()) + parseInt(day)) - 1];
@@ -49,14 +52,13 @@
 
     <div id="information" class="information">
         <p id="datum">
-            Weerbericht voor 
             <%- datum %>, <%- location %> 
         </p>
     
         <p id="weerbericht">
-            Temperatuur:
+            Temperature:
             <%- temperature %>
-            graden.
+            degrees celcius
         </p>
     
         <div id="details" class="details">
@@ -69,10 +71,10 @@
     
     <div id="navigatie" style="margin-top: 3em;">
         <p><b>Navigatie </b></p>
-        <p> Rechts = dag vooruit</p>
-        <p> Links = dag achteruit</p>
-        <p> Onder = vandaag</p>
-        <p> Boven = meer informatie</p>
+        <button id="button3">vandaag</button>
+        <button id="button4">meer informatie</button>
+        <button id="button1">dag vooruit</button>
+        <button id="button2">dag achteruit</button>
     </div>
 
     
