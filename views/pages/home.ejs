@@ -11,8 +11,45 @@
 
 <main>
 
-    Hoofdpagina
+    <!-- Data Verwerken -->
+    <% 
+
+    console.log("----")
+
+    console.log(weatherData)
+
+    var location = weatherData.location.city;
+    var temperature = weatherData.current_observation.condition.temperature;
+
+    console.log("----")
+
+    %>
+
+
+    <h1>Welkom Larissa,</h1>
     
+    <p id="datum">
+        Weerbericht voor: 
+    </p>
+
+    <p id="weerbericht">
+        Het is vandaag 
+        <%- temperature %>
+        graden.
+    </p>
+
+    <p id="locatie">
+        U bevind zich momenteel in <%- location %> 
+    </p>
+    
+    <div id=navigatie>
+        <p><b>Navigatie </b></p>
+        <p> Rechts = dag vooruit</p>
+        <p> Links = dag achteruit</p>
+        <p> Onder = vandaag</p>
+        <p> Boven = meer opties</p>
+    </div>
+
 </main>
 
 <footer>

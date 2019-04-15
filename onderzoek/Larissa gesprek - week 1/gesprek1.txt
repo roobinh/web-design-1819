@@ -1,0 +1,43 @@
+Gesprek Larissa
+Woensdag, 10-04-2019
+
+Notes:
+- valkuil: dropdown menu (liever niet, werkt niet goed met screenreader)
+- nvda = goeie screenreader 
+- navigatie onderaan of bovenaan? bovenaan
+- goed: navigatie -> te zien krijgen welke navigatie je al gehad hebt (bv. categorien -> boeken -> roman -> ... )
+- tip: luchtvaartmaatschappijen hebben slechte accessability pages 
+- geen automatisch startende audio/video gebruiken. 
+- iframe is not done, niet gebruiken
+- feedback dmv geluid is goed, als geluiden maar niet te lang duren.
+- aparte slechtziende pagina is goed alternatief, maar liever niet omdat je dan 2 sites voor alle paginas hebt.
+- wel is een accessability vraag een goeie, omdat je dan stylesheets kan aanpassen voor bijvoorbeeld kleurenblinden (op dezelfde pagina waar je al was).
+Q: is er een site die je op dit moment niet accessable vind maar wel graag accessable wil zien ?
+A: luchtvaartmaatschappijen, buienradar 
+Q: Zijn er ook voorbeelden van goeie sites voor jou?
+A: voorbeeld van goeie site: NS, stichting accessability	
+
+
+Conclusie: 
+- Voor het testen van mijn website ga ik de screenreader 'NVDA' gebruiken.
+- De site: Het mogelijk maken om het weer te checken (omdat dit nu nog niet mogelijk is)
+- Geen gebruik maken van: 
+	- dropdown menu
+	- automatisch startende video
+	- iframe
+- Gebruik maken van:
+	- Feedback geluiden
+	- Accessability vraag bij eerste 'tab'
+	- Navigatie overzicht
+
+
+Stappenplan:
+- De eerste stap is het maken van een navigatiemenu met daarin:
+	- Van (locatie)
+	- Naar (locatie)
+	- Datum van vlucht
+	- Aantal passagiers
+	- Reisklasse
+
+Vragen voor Larissa volgende week:
+1. Waarom is het zo moeilijk voor jou om een vlucht te boeken? Is het navigeren moeilijk? Zijn de resultaten lastig te begrijpen?

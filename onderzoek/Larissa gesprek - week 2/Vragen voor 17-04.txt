@@ -1,0 +1,8 @@
+Q: Welke informatie vind jij belangrijk om te weten?
+A: 
+
+Q: Werkt navigatie door middel van pijltjes goed voor jou (met een screenreader etc.)
+A: 
+
+Q: Heb je problemen met Engels (i.v.m. API)
+A: 
