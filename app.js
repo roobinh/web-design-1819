@@ -1,9 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-
-var indexRouter = require('./routes/index');
-var pathRouter = require('./routes/path');
+var OAuth = require('oauth');
 
 var app = express();
 var port = process.env.PORT || 1500
@@ -16,8 +14,81 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/path', pathRouter);
+app.get('/home', function(req, res, next) {
+    var weather = 'help';
+
+    var header = {
+        "X-Yahoo-App-Id": "8B56mn42"
+    };
+
+    var request = new OAuth.OAuth(
+        null,
+        null,
+        'dj0yJmk9Q2ZxTHh1WXVNbGtCJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTUz',
+        '98c6dd79297ccb87213d84bcdcc9ac89d5f27317',
+        '1.0',
+        null,
+        'HMAC-SHA1',
+        null,
+        header
+    );
+  
+    request.get(
+        'https://weather-ydn-yql.media.yahoo.com/forecastrss?location=amsterdam,nl&format=json&u=c',
+        null,
+        null,
+        function (err, data, result) {
+            if (err) {
+                console.log(err);
+            } else {
+                res.render('pages/home', {
+                    weatherData: JSON.parse(data),
+                    day: 0
+                });
+            }
+        }
+  );
+
+  JSON.stringify(weather)
+
+})
+
+app.get('/home/:day', function(req, res, next) {
+    var weather = 'help';
+
+    var header = {
+        "X-Yahoo-App-Id": "8B56mn42"
+    };
+
+    var request = new OAuth.OAuth(
+        null,
+        null,
+        'dj0yJmk9Q2ZxTHh1WXVNbGtCJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTUz',
+        '98c6dd79297ccb87213d84bcdcc9ac89d5f27317',
+        '1.0',
+        null,
+        'HMAC-SHA1',
+        null,
+        header
+    );
+  
+    request.get(
+        'https://weather-ydn-yql.media.yahoo.com/forecastrss?location=amsterdam,nl&format=json&u=c',
+        null,
+        null,
+        function (err, data, result) {
+            if (err) {
+                console.log(err);
+            } else {
+                res.render('pages/home', {
+                    weatherData: JSON.parse(data),
+                    day: req.params.day
+                });
+            }
+        }
+  );
+})
+
 
 module.exports = app;
 

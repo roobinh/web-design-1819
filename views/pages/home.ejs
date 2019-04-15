@@ -16,6 +16,7 @@
 
     console.log("----")
 
+    console.log(day)
     console.log(weatherData)
 
     var location = weatherData.location.city;
@@ -25,9 +26,7 @@
 
     %>
 
-
-    <h1>Welkom Larissa,</h1>
-    
+    <!-- Zichtbaar HTML -->
     <p id="datum">
         Weerbericht voor: 
     </p>
@@ -42,7 +41,7 @@
         U bevind zich momenteel in <%- location %> 
     </p>
     
-    <div id=navigatie>
+    <div id="navigatie" style="margin-top: 3em;">
         <p><b>Navigatie </b></p>
         <p> Rechts = dag vooruit</p>
         <p> Links = dag achteruit</p>
