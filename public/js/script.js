@@ -25,8 +25,10 @@ function buttonLeft() {
 }
 
 function buttonUp() {
-    detailsDiv = document.getElementById('details')
-    detailsDiv.setAttribute('style', 'display: block');
+    if(currentParam == 0) {
+        detailsDiv = document.getElementById('details')
+        detailsDiv.setAttribute('style', 'display: block');
+    }
 }
 
 function buttonRight() {

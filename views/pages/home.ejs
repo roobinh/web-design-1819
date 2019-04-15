@@ -33,6 +33,11 @@
         var temperature = "tussen " + weatherData.forecasts[day].low + " en " + weatherData.forecasts[day].high;
     }
 
+    var status = weatherData.current_observation.condition.text;
+    var windsnelheid = weatherData.current_observation.wind.speed;
+    var sunrise = weatherData.current_observation.astronomy.sunrise;
+    var sunset = weatherData.current_observation.astronomy.sunset;
+
     console.log("----")
     %>
 
@@ -55,7 +60,10 @@
         </p>
     
         <div id="details" class="details">
-            <p>kiekeboe</p>
+            <p>Status: <%- status %></p>
+            <p>Windsnelheid: <%- windsnelheid %> per uur</p>
+            <p>Zonsopgang: <%- sunrise %></p>
+            <p>Zonsondergang: <%- sunset %></p>
         </div>
     </div>
     
