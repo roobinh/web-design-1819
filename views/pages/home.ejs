@@ -29,7 +29,7 @@
 
     if(day == 0) {
         var temperature = weatherData.current_observation.condition.temperature;
-    } else {
+    } else if (day < 9) {
         var temperature = "tussen " + weatherData.forecasts[day].low + " en " + weatherData.forecasts[day].high;
     }
 
