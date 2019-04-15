@@ -11,3 +11,20 @@ document.onkeydown = function(e) {
         console.log("Down")
     }
 }
+
+function buttonLeft() {
+
+}
+
+function buttonUp() {
+
+}
+
+function buttonRight() {
+
+}
+
+
+function buttonDown() {
+
+}

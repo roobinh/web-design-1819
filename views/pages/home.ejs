@@ -13,33 +13,42 @@
 
     <!-- Data Verwerken -->
     <% 
-
     console.log("----")
 
-    console.log(day)
-    console.log(weatherData)
+
+
+    var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday', 'Sunday'];
+
+    var currentDate = new Date();
+    
+    if(day == 0) {
+        var datum = "Vandaag"
+    } else if(day < 7) {
+        var datum = days[(parseInt(currentDate.getDay()) + parseInt(day)) - 1];
+        console.log(datum);
+    } else {
+        console.log("Helaas is het niet mogelijk om langer dan een week vooruit te kijken")
+    }
 
     var location = weatherData.location.city;
     var temperature = weatherData.current_observation.condition.temperature;
 
     console.log("----")
-
     %>
 
     <!-- Zichtbaar HTML -->
     <p id="datum">
         Weerbericht voor: 
+        <%- datum %>, <%- location %> 
     </p>
-
+    
     <p id="weerbericht">
-        Het is vandaag 
+        Temperatuur:
         <%- temperature %>
         graden.
     </p>
 
-    <p id="locatie">
-        U bevind zich momenteel in <%- location %> 
-    </p>
+    
     
     <div id="navigatie" style="margin-top: 3em;">
         <p><b>Navigatie </b></p>
