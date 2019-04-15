@@ -1,30 +1,39 @@
 console.log("script.js imported.")
 
+var currentParam = window.location.pathname.split('/')[2]; //i.e. 0, 1, 2, 3...
+
 document.onkeydown = function(e) {
     if(e.keyCode == 37) { // left Key
-        console.log("Left")
+        buttonLeft();
     } else if(e.keyCode == 38) { // up key
-        console.log("Up")
+        buttonUp();
     } else if(e.keyCode == 39) { //right key
-        console.log("Right")
+        buttonRight();
     } else if(e.keyCode == 40) { //down key
-        console.log("Down")
+        buttonDown();
     }
 }
 
 function buttonLeft() {
-
+    if(currentParam > 0) {
+        var newDate = parseInt(currentParam) - 1; 
+        window.location.href = "/home/" + newDate;
+    } else {
+        console.log("Niet mogelijk om terug te gaan")
+    }
+    
 }
 
 function buttonUp() {
-
+    detailsDiv = document.getElementById('details')
+    detailsDiv.setAttribute('style', 'display: block');
 }
 
 function buttonRight() {
-
+    var newDate = parseInt(currentParam) + 1; 
+    window.location.href = "/home/" + newDate;
 }
 
-
 function buttonDown() {
-
+    window.location.href = "/home/0";
 }

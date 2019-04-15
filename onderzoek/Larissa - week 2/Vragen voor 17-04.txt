@@ -6,3 +6,6 @@ A:
 
 Q: Heb je problemen met Engels (i.v.m. API)
 A: 
+
+Q: Als ik meer details wil weergeven, hoe zorg ik ervoor dat u dit meteen hoort?
+A: 
