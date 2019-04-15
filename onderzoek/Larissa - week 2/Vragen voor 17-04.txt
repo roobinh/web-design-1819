@@ -9,3 +9,6 @@ A:
 
 Q: Als ik meer details wil weergeven, hoe zorg ik ervoor dat u dit meteen hoort?
 A: 
+
+Q: Ga je de applicatie ook op telefoon gebruiken, en zo ja: hoe wenst u te navigeren?
+A: 

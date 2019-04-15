@@ -13,14 +13,14 @@
     <!-- Data manipulatie -->
     <% 
     console.log("----")
-
+    console.log("Pagina opgevraagd.")
     var currentDate = new Date();
 
     if(day == 0) {
-        var datum = "Nu"
+        var datum = "nu"
     } else if (day < 7) {
         var days = ['Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag', 'Zondag'];
-        var datum = days[(parseInt(currentDate.getDay()) + parseInt(day)) - 1];
+        var datum = "aanstaande " + days[(parseInt(currentDate.getDay()) + parseInt(day)) - 1];
     } else {
         console.log("Helaas is het niet mogelijk om langer dan een week vooruit te kijken")
     }
@@ -37,21 +37,28 @@
     %>
 
     <!-- Zichtbaar HTML -->
-    <p id="datum">
-        Weerbericht voor: 
-        <%- datum %>, <%- location %> 
-    </p>
 
-    <p id="weerbericht">
-        Temperatuur:
-        <%- temperature %>
-        graden.
-    </p>
-
-    <div id="details" class="details">
-        <p>kiekeboe</p>
+    <div id="error" class="error">
+        Helaas is het niet mogelijk om verder dan een week vooruit te kijken. Klik op pijltje links om terug te gaan, of pijltje omlaag om terug te gaan naar datum van vandaag.
     </div>
 
+    <div id="information" class="information">
+        <p id="datum">
+            Weerbericht voor 
+            <%- datum %>, <%- location %> 
+        </p>
+    
+        <p id="weerbericht">
+            Temperatuur:
+            <%- temperature %>
+            graden.
+        </p>
+    
+        <div id="details" class="details">
+            <p>kiekeboe</p>
+        </div>
+    </div>
+    
     <div id="navigatie" style="margin-top: 3em;">
         <p><b>Navigatie </b></p>
         <p> Rechts = dag vooruit</p>

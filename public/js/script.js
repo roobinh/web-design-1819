@@ -1,6 +1,7 @@
 console.log("script.js imported.")
 
 var currentParam = window.location.pathname.split('/')[2]; //i.e. 0, 1, 2, 3...
+checkForValidDate(currentParam);
 
 document.onkeydown = function(e) {
     if(e.keyCode == 37) { // left Key
@@ -21,7 +22,6 @@ function buttonLeft() {
     } else {
         console.log("Niet mogelijk om terug te gaan")
     }
-    
 }
 
 function buttonUp() {
@@ -37,3 +37,11 @@ function buttonRight() {
 function buttonDown() {
     window.location.href = "/home/0";
 }
+
+function checkForValidDate(param) {
+    if(param > 6) {
+        document.getElementById('error').setAttribute('style', 'display: block');
+        document.getElementById('information').setAttribute('style', 'display: none');
+    }
+}
+

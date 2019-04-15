@@ -10,4 +10,8 @@ a {
 .details {
   display: none;
 }
+
+.error {
+  display: none;
+}
   
