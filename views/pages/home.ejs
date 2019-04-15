@@ -17,7 +17,7 @@
     var currentDate = new Date();
 
     if(day == 0) {
-        var datum = "Vandaag"
+        var datum = "Nu"
     } else if (day < 7) {
         var days = ['Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag', 'Zondag'];
         var datum = days[(parseInt(currentDate.getDay()) + parseInt(day)) - 1];
@@ -48,7 +48,6 @@
         graden.
     </p>
 
-    
     <div id="details" class="details">
         <p>kiekeboe</p>
     </div>
@@ -58,7 +57,7 @@
         <p> Rechts = dag vooruit</p>
         <p> Links = dag achteruit</p>
         <p> Onder = vandaag</p>
-        <p> Boven = meer opties</p>
+        <p> Boven = meer informatie</p>
     </div>
 
     
