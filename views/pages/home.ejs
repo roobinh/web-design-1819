@@ -10,28 +10,28 @@
 </header>
 
 <main>
-
-    <!-- Data Verwerken -->
+    <!-- Data manipulatie -->
     <% 
     console.log("----")
 
-
-
-    var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday', 'Sunday'];
-
     var currentDate = new Date();
-    
+
     if(day == 0) {
         var datum = "Vandaag"
-    } else if(day < 7) {
+    } else if (day < 7) {
+        var days = ['Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag', 'Zondag'];
         var datum = days[(parseInt(currentDate.getDay()) + parseInt(day)) - 1];
-        console.log(datum);
     } else {
         console.log("Helaas is het niet mogelijk om langer dan een week vooruit te kijken")
     }
 
     var location = weatherData.location.city;
-    var temperature = weatherData.current_observation.condition.temperature;
+
+    if(day == 0) {
+        var temperature = weatherData.current_observation.condition.temperature;
+    } else {
+        var temperature = "tussen " + weatherData.forecasts[day].low + " en " + weatherData.forecasts[day].high;
+    }
 
     console.log("----")
     %>
