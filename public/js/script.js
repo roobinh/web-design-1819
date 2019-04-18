@@ -63,10 +63,10 @@ function checkForValidDate() {
 }
 
 function checkForValidButton() {
-    console.log("param = 0");
-
     if(currentParam == 0) {
         document.getElementById('button2').setAttribute('style', 'display: none');
+        document.getElementById('button3').setAttribute('style', 'display: none');
+
     }
 }
 
