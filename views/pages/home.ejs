@@ -20,7 +20,7 @@
 
 
     if(day == 0) {
-        var datum = "Now"
+        var datum = "Nu"
     } else if (day < 7) {
         var days = ['Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag', 'Zondag'];
         var currentDate = new Date();
@@ -57,14 +57,14 @@
         </span>
     
         <p id="weerbericht">
-            Temperature:
+            Temperatuur:
             <%- temperature %>
-            degrees celcius
+            graden celcius
         </p>
     
         <div id="details" class="details">
             <span lang="en">Status: <%- status %></span><br>
-            <span lang="en">Windsnelheid: <%- windsnelheid %> per uur</span><br>
+            <span lang="en">Windsnelheid: <%- windsnelheid %> kilometer per uur</span><br>
             <span lang="en">Zonsopgang: <%- sunrise %></span><br>
             <span lang="en">Zonsondergang: <%- sunset %></span><br>
         </div>
@@ -72,9 +72,9 @@
     
     <div id="navigatie" style="margin-top: 3em;">
         <p><b>Navigatie </b></p>
-        <button id="button3">vandaag</button>
         <button id="button4">meer informatie</button>
         <button id="button2">dag achteruit</button>
+        <button id="button3">vandaag</button>
         <button id="button1">dag vooruit</button>
     </div>
 
