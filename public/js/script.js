@@ -66,7 +66,10 @@ function checkForValidButton() {
     if(currentParam == 0) {
         document.getElementById('button2').setAttribute('style', 'display: none');
         document.getElementById('button3').setAttribute('style', 'display: none');
+    }
 
+    if(currentParam > 0) {
+        document.getElementById('button4').setAttribute('style', 'display: none');
     }
 }
 
