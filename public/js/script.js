@@ -14,6 +14,10 @@ document.getElementById('button2').addEventListener("click", buttonLeft)
 document.getElementById('button3').addEventListener("click", buttonDown)
 document.getElementById('button4').addEventListener("click", buttonUp)
 
+document.getElementById('1uurbutton').addEventListener("click", showTableOne)
+document.getElementById('3uurbutton').addEventListener("click", showTableTwo)
+document.getElementById('24uurbutton').addEventListener("click", showTableThree)
+
 var currentParam = window.location.pathname.split('/')[2]; //i.e. 0, 1, 2, 3...
 checkForValidDate();
 checkForValidButton();
@@ -67,9 +71,39 @@ function checkForValidButton() {
         document.getElementById('button2').setAttribute('style', 'display: none');
         document.getElementById('button3').setAttribute('style', 'display: none');
         document.getElementById('button4').click();
+    } else {
+        document.getElementById('buttons').setAttribute('style', 'display: none');
     }
     
         document.getElementById('button4').setAttribute('style', 'display: none');
+}
+
+
+var tableOne = document.getElementById('1uur')
+var tableTwo = document.getElementById('3uur')
+var tableThree = document.getElementById('24uur')
+
+
+function showTableOne() {
+    tableOne.setAttribute("style", "display: block")
+
+    tableTwo.setAttribute("style", "display: none")
+    tableThree.setAttribute("style", "display: none")
+
+}
+
+function showTableTwo() {
+    tableTwo.setAttribute("style", "display: block")
+
+    tableOne.setAttribute("style", "display: none")
+    tableThree.setAttribute("style", "display: none")
+}
+
+function showTableThree() {
+    tableThree.setAttribute("style", "display: block")
+
+    tableTwo.setAttribute("style", "display: none")
+    tableOne.setAttribute("style", "display: none")
 }
 
 })();

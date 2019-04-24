@@ -1,14 +1,19 @@
-Q: Welke informatie vind jij belangrijk om te weten?
-A: 
+Q: Welke informatie vind jij belangrijk om te weten? 
+A: Wanneer het gaat regenen
+1, 3 & 24 uur (table, paragraph -> nog niet duidelijk. meerdere dingen proberen)
+regen in mm & daarbij hoeveel dat dan precies is (meer mensentaal)
 
 Q: Werkt navigatie door middel van pijltjes goed voor jou (met een screenreader etc.)
 A: 
 
 Q: Heb je problemen met Engels (i.v.m. API)
-A: 
+A: Screenreader alles in nederlands <language attribute = nl> <- belangrijk!
 
-Q: Als ik meer details wil weergeven, hoe zorg ik ervoor dat u dit meteen hoort?
-A: 
+Q: Ga je de applicatie ook op telefoon gebruiken, en zo ja: hoe wenst u te
+navigeren? 
+A: Swipen is het beste, button practischer
 
-Q: Ga je de applicatie ook op telefoon gebruiken, en zo ja: hoe wenst u te navigeren?
-A: 
+navigatie omhoog
+
+
+
