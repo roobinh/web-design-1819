@@ -12,7 +12,6 @@
 <main>
 
     <div id="navigatie" style="margin-top: 3em;">
-        <p><b>Navigatie </b></p>
         <button id="button4">meer informatie</button>
         <button id="button2">dag achteruit</button>
         <button id="button3">vandaag</button>
@@ -65,16 +64,17 @@
         </span>
     
         <p id="weerbericht">
-            Temperatuur =
+            Temperatuur is
             <%- temperature %>
             graden celcius
         </p>
-    
+
         <div id="details" class="details">
-            <span lang="en">Status = <%- status %></span><br>
-            <span lang="en">Windsnelheid = <%- windsnelheid %> kilometer per uur</span><br>
-            <span lang="en">Zonsopgang = <%- sunrise %></span><br>
-            <span lang="en">Zonsondergang = <%- sunset %></span><br>
+            <p>Het gaat over 1 uur en 15 minuten voor een uur lang hard regenen!</p>
+            <span lang="en">Status is <%- status %></span><br>
+            <span lang="en">Windsnelheid is <%- windsnelheid %> kilometer per uur</span><br>
+            <span lang="en">Zonsopgang is om <%- sunrise %></span><br>
+            <span lang="en">Zonsondergang is om <%- sunset %></span><br>
         </div>
 
         <div id="buttons" class="buttons">
@@ -95,23 +95,23 @@
                 </tr>
                 <tr>
                     <th>20 min</th>
-                    <th>35 ml</th>
+                    <th>23 ml</th>
                 </tr>
                 <tr>
                     <th>30 min</th>
-                    <th>250 ml</th>
+                    <th>20 ml</th>
                 </tr>
                 <tr>
                     <th>40 min</th>
-                    <th>310 ml</th>
+                    <th>35 ml</th>
                 </tr>
                 <tr>
                     <th>50 min</th>
-                    <th>120 ml</th>
+                    <th>35 ml</th>
                 </tr>
                 <tr>
                     <th>60 min</th>
-                    <th>70 ml</th>
+                    <th>30 ml</th>
                 </tr>
             </table>    
         </div>
@@ -123,40 +123,40 @@
                     <th>10 ml</th>
                 </tr>
                 <tr>
-                    <th>15min</th>
-                    <th>20 ml</th>
+                    <th>15 min</th>
+                    <th>22 ml</th>
                 </tr>
                 <tr>
                     <th>30 min</th>
-                    <th>40 ml</th>
+                    <th>20 ml</th>
                 </tr>
                 <tr>
                     <th>45 min</th>
-                    <th>240 ml</th>
+                    <th>35 ml</th>
                 </tr>
                 <tr>
                     <th>1 uur</th>
-                    <th>310 ml</th>
+                    <th>30 ml</th>
                 </tr>
                 <tr>
                     <th>1 uur 15 minuten</th>
-                    <th>320 ml</th>
+                    <th>45 ml</th>
                 </tr>
                 <tr>
                     <th>1 uur 30 minuten</th>
-                    <th>330 ml</th>
+                    <th>60 ml</th>
                 </tr>
                 <tr>
                     <th>1 uur 45 minuten</th>
-                    <th>320 ml</th>
+                    <th>75 ml</th>
                 </tr>
                 <tr>
                     <th>2 uur 0 minuten</th>
-                    <th>210 ml</th>
+                    <th>110 ml</th>
                 </tr>
                 <tr>
                     <th>2 uur 15 minutenn</th>
-                    <th>200 ml</th>
+                    <th>130 ml</th>
                 </tr>
                 <tr>
                     <th>2 uur 30 minuten</th>
@@ -164,118 +164,136 @@
                 </tr>
                 <tr>
                     <th>2 uur 45 minuten</th>
-                    <th>180 ml</th>
+                    <th>160 ml</th>
                 </tr>
                 <tr>
                     <th>3 uur</th>
-                    <th>130 ml</th>
+                    <th>50 ml</th>
                 </tr>
             </table>    
         </div>
 
         <div id="24uur" style="display: none">
-            <table>
-                <tr>
-                    <th>0 uur</th>
-                    <th>10 ml</th>
-                </tr>
-                <tr>
-                    <th>1 uur</th>
-                    <th>20 ml</th>
-                </tr>
-                <tr>
-                    <th>2 uur</th>
-                    <th>35 ml</th>
-                </tr>
-                <tr>
-                    <th>3 uur</th>
-                    <th>40 ml</th>
-                </tr>
-                <tr>
-                    <th>4 uur</th>
-                    <th>45 ml</th>
-                </tr>
-                <tr>
-                    <th>5 uur</th>
-                    <th>55 ml</th>
-                </tr>
-                <tr>
-                    <th>6 uur</th>
-                    <th>60 ml</th>
-                </tr>
-                <tr>
-                    <th>7 uur</th>
-                    <th>55 ml</th>
-                </tr>
-                <tr>
-                    <th>8 uur</th>
-                    <th>50 ml</th>
-                </tr>
-                <tr>
-                    <th>9 uur</th>
-                    <th>40 ml</th>
-                </tr>
-                <tr>
-                    <th>19 uur</th>
-                    <th>45 ml</th>
-                </tr>
-                <tr>
-                    <th>11 uur </th>
-                    <th>30 ml</th>
-                </tr>
-                <tr>
-                    <th>12 uur</th>
-                    <th>20 ml</th>
-                </tr>
-                <tr>
-                    <th>13 uur</th>
-                    <th>25 ml</th>
-                </tr>
-                <tr>
-                    <th>14 uur</th>
-                    <th>30 ml</th>
-                </tr>
-                <tr>
-                    <th>15 uur</th>
-                    <th>100 ml</th>
-                </tr>
-                <tr>
-                    <th>16 uur</th>
-                    <th>350 ml</th>
-                </tr>
-                <tr>
-                    <th>17 uur</th>
-                    <th>400  ml</th>
-                </tr>
-                <tr>
-                    <th>18 uur</th>
-                    <th>350 ml</th>
-                </tr>
-                <tr>
-                    <th>19 uur</th>
-                    <th>310 ml</th>
-                </tr>
-                <tr>
-                    <th>20 uur</th>
-                    <th>230 ml</th>
-                </tr>
-                <tr>
-                    <th>21 uur</th>
-                    <th>210 ml</th>
-                </tr>
-                <tr>
-                    <th>22 uur</th>
-                    <th>200 ml</th>
-                </tr>
-                <tr>
-                    <th>23 uur</th>
-                    <th>180 ml</th>
-                </tr>
-                <tr>
-                    <th>24 uur</th>
-                    <th>120 ml</th>
-                </tr>
-            </table>    
+            <button id="1kwart">Komende 6 uur</button>
+            <button id="2kwart">Over 6 tot 12 uur</button>
+            <button id="3kwart">Over 12 tot 18 uur</button>
+            <button id="4kwart">Over 18 tot 24 uur</button>
+            
+            <div id="firstH">
+                <table>
+                    <tr>
+                        <th>0 uur</th>
+                        <th>10 ml</th>
+                    </tr>
+                    <tr>
+                        <th>1 uur</th>
+                        <th>30 ml</th>
+                    </tr>
+                    <tr>
+                        <th>2 uur</th>
+                        <th>110 ml</th>
+                    </tr>
+                    <tr>
+                        <th>3 uur</th>
+                        <th>50 ml</th>
+                    </tr>
+                    <tr>
+                        <th>4 uur</th>
+                        <th>40 ml</th>
+                    </tr>
+                    <tr>
+                        <th>5 uur</th>
+                        <th>35 ml</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="secondH">
+                <table>
+                    <tr>
+                        <th>6 uur</th>
+                        <th>30 ml</th>
+                    </tr>
+                    <tr>
+                        <th>7 uur</th>
+                        <th>15 ml</th>
+                    </tr>
+                    <tr>
+                        <th>8 uur</th>
+                        <th>10 ml</th>
+                    </tr>
+                    <tr>
+                        <th>9 uur</th>
+                        <th>5 ml</th>
+                    </tr>
+                    <tr>
+                        <th>10 uur</th>
+                        <th>0 ml</th>
+                    </tr>
+                    <tr>
+                        <th>11 uur </th>
+                        <th>0 ml</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="thirdH">
+                <table>
+                    <tr>
+                        <th>12 uur</th>
+                        <th>0 ml</th>
+                    </tr>
+                    <tr>
+                        <th>13 uur</th>
+                        <th>0 ml</th>
+                    </tr>
+                    <tr>
+                        <th>14 uur</th>
+                        <th>0 ml</th>
+                    </tr>
+                    <tr>
+                        <th>15 uur</th>
+                        <th>0 ml</th>
+                    </tr>
+                    <tr>
+                        <th>16 uur</th>
+                        <th>5 ml</th>
+                    </tr>
+                    <tr>
+                        <th>17 uur</th>
+                        <th>0  ml</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="fourthH">
+                <table>
+                    <tr>
+                        <th>18 uur</th>
+                        <th>10 ml</th>
+                    </tr>
+                    <tr>
+                        <th>19 uur</th>
+                        <th>20 ml</th>
+                    </tr>
+                    <tr>
+                        <th>20 uur</th>
+                        <th>25 ml</th>
+                    </tr>
+                    <tr>
+                        <th>21 uur</th>
+                        <th>30 ml</th>
+                    </tr>
+                    <tr>
+                        <th>22 uur</th>
+                        <th>35 ml</th>
+                    </tr>
+                    <tr>
+                        <th>23 uur</th>
+                        <th>35 ml</th>
+                    </tr>
+                </table>
+            </div>    
         </div>
         
     </div>

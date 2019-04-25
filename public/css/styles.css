@@ -1,18 +1,21 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-  
-a {
-  color: #00B7FF;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: lightskyblue;
 }
 
-.details {
-  display: none;
+div {
+  margin-top: 1em;
 }
 
-.error {
-  display: none;
+button {
+  background-color: white;
+  border: 1px black;
+  color: black;
+  text-decoration: none;
+  padding: 15px 32px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-right: 0.5em;
 }
 
 table {
@@ -23,7 +26,14 @@ table {
   border-spacing: 1em;
 }
 
-div {
-  margin: 1em;
+.details {
+  display: none;
 }
-  
+
+.error {
+  display: none;
+}
+
+#firstH, #secondH, #thirdH, #fourthH {
+  display: none;
+}

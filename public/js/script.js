@@ -1,7 +1,9 @@
 (() => {
-
 console.log("script.js imported.")
 
+var currentParam = window.location.pathname.split('/')[2]; //i.e. 0, 1, 2, 3...
+
+// play song on load
 // window.onload = function() {
 //     document.getElementById("audio").play();
 //     var audio = document.getElementById("audio")
@@ -18,7 +20,11 @@ document.getElementById('1uurbutton').addEventListener("click", showTableOne)
 document.getElementById('3uurbutton').addEventListener("click", showTableTwo)
 document.getElementById('24uurbutton').addEventListener("click", showTableThree)
 
-var currentParam = window.location.pathname.split('/')[2]; //i.e. 0, 1, 2, 3...
+document.getElementById('1kwart').addEventListener("click", showTablesOne)
+document.getElementById('2kwart').addEventListener("click", showTablesTwo)
+document.getElementById('3kwart').addEventListener("click", showTablesThree)
+document.getElementById('4kwart').addEventListener("click", showTablesFour)
+
 checkForValidDate();
 checkForValidButton();
 
@@ -78,32 +84,65 @@ function checkForValidButton() {
         document.getElementById('button4').setAttribute('style', 'display: none');
 }
 
-
+// Table stuff
 var tableOne = document.getElementById('1uur')
 var tableTwo = document.getElementById('3uur')
 var tableThree = document.getElementById('24uur')
 
-
 function showTableOne() {
     tableOne.setAttribute("style", "display: block")
-
     tableTwo.setAttribute("style", "display: none")
     tableThree.setAttribute("style", "display: none")
-
 }
 
 function showTableTwo() {
     tableTwo.setAttribute("style", "display: block")
-
     tableOne.setAttribute("style", "display: none")
     tableThree.setAttribute("style", "display: none")
 }
 
 function showTableThree() {
     tableThree.setAttribute("style", "display: block")
-
     tableTwo.setAttribute("style", "display: none")
     tableOne.setAttribute("style", "display: none")
+}
+
+// 24 hour stuff
+var div1 = document.getElementById('firstH');
+var div2 = document.getElementById('secondH');
+var div3 = document.getElementById('thirdH');
+var div4 = document.getElementById('fourthH');
+
+function showTablesOne() {
+    div1.setAttribute('style', 'display: block')
+
+    div2.setAttribute('style', 'display: none')
+    div3.setAttribute('style', 'display: none')
+    div4.setAttribute('style', 'display: none')
+}
+
+function showTablesTwo() {
+    div2.setAttribute('style', 'display: block')
+
+    div1.setAttribute('style', 'display: none')
+    div3.setAttribute('style', 'display: none')
+    div4.setAttribute('style', 'display: none')
+}
+
+function showTablesThree() {
+    div3.setAttribute('style', 'display: block')
+
+    div1.setAttribute('style', 'display: none')
+    div2.setAttribute('style', 'display: none')
+    div4.setAttribute('style', 'display: none')
+}
+
+function showTablesFour() {
+    div4.setAttribute('style', 'display: block')
+
+    div1.setAttribute('style', 'display: none')
+    div2.setAttribute('style', 'display: none')
+    div3.setAttribute('style', 'display: none')
 }
 
 })();
