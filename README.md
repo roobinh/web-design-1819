@@ -5,17 +5,12 @@ _Voor het vak Web Design gaan we bezig met een opdracht specifiek voor 1 persoon
 ## Table of Content
 1. Opdracht
 2. Onderzoek
-3. Versies
-4. De Website
+3. Eindresultaat
+4. Versies
 5. Conclusie
    
 ## Hoofdstuk 1 | Opdracht
 Voorafgaand aan het maken van de website hebben we Larissa geinterviewd om haar beter te leren kennen. Hierin heb ik de vraag gesteld welke website voor Larissa slecht te gebruiken is. Als antwoord op deze vraag zei ze dat de website van buienradar slecht te gebruiken is, omdat er gebruik wordt gemaakt van een visuele map zonder tekst. Hierdoor heb ik ervoor gekozen om buienradar voor haar te maken.
-
-Het eindresultaat is hieronder te zien:
-
-<img src="https://i.ibb.co/Dk95kvF/image.png">
-
 
 ## Hoofdstuk 2 | Onderzoek
 Zoals eerder vermeld hebben we voor dit vak meerdere mogelijkheden gehad om vragen aan Larissa te stellen. Alle vragen, antwoorden en aantekeningen zijn hieronder te zien:
@@ -67,8 +62,6 @@ A: Screenreader alles in nederlands <language attribute = nl> <- belangrijk!
 
 **Gesprek Larissa - Woensdag 24/04/2019**
 ```
-Na drukken op knoppen (navigatie) focus leggen op de tekst, niet weer op navigatie.
-
 '=' tekentje veranderen naar 'is'
 
 24 uur -> ochtend middag avond nacht
@@ -76,14 +69,51 @@ Na drukken op knoppen (navigatie) focus leggen op de tekst, niet weer op navigat
 			middag knop -> dan 6-12 uur elk half uur
 ```
 
-## Hoofdstuk 3 | Versies
+## Hoofdstuk 3 | Eindresultaat
+
+<img src="https://i.ibb.co/Dk95kvF/image.png">
+
+Functies:
+- Live de huidige temperatuur
+- Live de huidige status (winderig, bewolkt, zonnig etc.)
+- Live de huidige windsnelheid
+- Live de zonsopkomst en zonsondergang van vandaag
+- (niet live) regenval 
+- Navigatie door middel van pijltjestoetsen
+- Ook is het mogelijk om tot 10 dagen dag vooruit te gaan (met live data):
+  
+<img src="https://i.ibb.co/2WhFmhq/image.png" width="300">
+
+## Hoofdstuk 4 | Versies
+
 **Versie week 1**
 
+Na week 1 is het mij gelukt live data op te halen vanuit de Yahoo Weather API. Deze data wordt server-side gerendered en vervolgens op de pagina weergegeven. De site zag er als volgt uit:
+
+<img src="https://i.ibb.co/0rbxF8m/image.png">
 
 **Versie week 2**
 
+Na week 2 heb ik geluisterd naar de feedback van Larissa. 
+
+- Ik heb de navigatie bovenaan de pagina gezet, zodat Larissa meteen weet dat ze door de site kan navigeren. 
+- Ook vind Larissa belangrijk dat de '1, 3 & 24 uurs kaart' ook voor haar mogelijk wordt gemaakt. Dit heb ik gedaan door middel van het opdelen van 1 uur in elk 10 minuten, 3 uur elk kwartier en de 24 uurs functie per uur.
+- Bepaalde dingen van Engels naar Nederlands (en lang attribute in html toegevoegd)
+
+<img src="https://i.ibb.co/z2bMB28/image.png">
 
 **Versie week 3**
+
+Na de laatste review heb ik nog een paar kleine aanpassingen gemaakt:
+  - '=' teken veranderd naar 'is', voor de screenreader.
+  - De 24-uur functie opgedeeld in 4x 6 uur, zodat het geen lange tabel van 24 rijen is.
+  - Kleine layout aanpassingen en knoppen groter gemaakt voor telefoongebruik.
+  
 <img src="https://i.ibb.co/Dk95kvF/image.png">
+
+## Hoofdstuk 5 | Conclusie
+Al met al was het super leerzaam om samen met een 'echt' persoon te testen. Dit is de beste manier om erachter te komen of je site voldoet aan de juiste functionaliteit en of het te gebruiken is. Ook was het leerzaam om vanuit de ogen van een slechtziende te zien hoe ze het internet gebruiken.
+
+Tot slot wil ik Larissa bedanken voor de medewerking.
 
 
