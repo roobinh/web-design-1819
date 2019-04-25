@@ -10,9 +10,12 @@ _Voor het vak Web Design gaan we bezig met een opdracht specifiek voor 1 persoon
 4. [Versies](#4)
 5. [Conclusie](#5)
    
-<a href="1"></a>
+<a name="1"></a>
+
 ## Hoofdstuk 1 | Opdracht
-Voorafgaand aan het maken van de website hebben we Larissa geinterviewd om haar beter te leren kennen. Hierin heb ik de vraag gesteld welke website voor Larissa slecht te gebruiken is. Als antwoord op deze vraag zei ze dat de website van buienradar slecht te gebruiken is, omdat er gebruik wordt gemaakt van een visuele map zonder tekst. Hierdoor heb ik ervoor gekozen om buienradar voor haar te maken.
+Voorafgaand aan het maken van de website hebben we Larissa geinterviewd om haar beter te leren kennen. Hierin heb ik de vraag gesteld welke website voor Larissa slecht te gebruiken is. Als antwoord op deze vraag zei ze dat de website van buienradar slecht te gebruiken is, omdat er gebruik wordt gemaakt van een visuele kaart zonder tekst. Hierdoor heb ik ervoor gekozen om buienradar voor haar te maken.
+
+<a name="2"></a>
 
 ## Hoofdstuk 2 | Onderzoek
 Zoals eerder vermeld hebben we voor dit vak meerdere mogelijkheden gehad om vragen aan Larissa te stellen. Alle vragen, antwoorden en aantekeningen zijn hieronder te zien:
@@ -71,6 +74,8 @@ A: Screenreader alles in nederlands <language attribute = nl> <- belangrijk!
 			middag knop -> dan 6-12 uur elk half uur
 ```
 
+<a name="3"></a>
+
 ## Hoofdstuk 3 | Eindresultaat
 
 <img src="https://i.ibb.co/Dk95kvF/image.png">
@@ -80,11 +85,13 @@ Functies:
 - Live de huidige status (winderig, bewolkt, zonnig etc.)
 - Live de huidige windsnelheid
 - Live de zonsopkomst en zonsondergang van vandaag
-- (niet live) regenval 
+- Niet-Live regenval 
 - Navigatie door middel van pijltjestoetsen
-- Ook is het mogelijk om tot 10 dagen dag vooruit te gaan (met live data):
+- Ook is het mogelijk om tot 10 dagen dag vooruit te kijken:
   
 <img src="https://i.ibb.co/2WhFmhq/image.png" width="300">
+
+<a name="4"></a>
 
 ## Hoofdstuk 4 | Versies
 
@@ -112,6 +119,8 @@ Na de laatste review heb ik nog een paar kleine aanpassingen gemaakt:
   - Kleine layout aanpassingen en knoppen groter gemaakt voor telefoongebruik.
   
 <img src="https://i.ibb.co/Dk95kvF/image.png">
+
+<a name="5"></a>
 
 ## Hoofdstuk 5 | Conclusie
 Al met al was het super leerzaam om samen met een 'echt' persoon te testen. Dit is de beste manier om erachter te komen of je site voldoet aan de juiste functionaliteit en of het te gebruiken is. Ook was het leerzaam om vanuit de ogen van een slechtziende te zien hoe ze het internet gebruiken.
