@@ -1,14 +1,16 @@
 # Web Design @cmda-minor-web 1819
 
-_Voor het vak Web Design gaan we bezig met een opdracht specifiek voor 1 persoon, namelijk Larissa. Larissa is blind maar maakt alsnog vaak gebruik van het web. Toch zijn er helaas websites die voor haar slecht/niet te gebruiken zijn. Door te interviewen, haar te laten testen en vragen te stellen hebben we allemaal een website specifiek voor haar gebruik gemaakt. In dit verslag lees je welke site ik voor haar gemaakt heb._
+_Voor het vak Web Design gaan we bezig met een opdracht specifiek voor 1 persoon, namelijk Larissa. Larissa is blind maar maakt onglangs dat vaak gebruik van het web. Toch zijn er helaas veel websites die voor Larissa slecht/niet te gebruiken zijn. Door Larissa te interviewen, haar te laten testen en vragen te stellen hebben we allemaal een website specifiek voor haar gebruik gemaakt. In dit verslag lees je welke site ik voor haar gemaakt heb._
+
 
 ## Table of Content
-1. Opdracht
-2. Onderzoek
-3. Eindresultaat
-4. Versies
-5. Conclusie
+1. [Opdracht](#1)
+2. [Onderzoek](#2)
+3. [Eindresultaat](#3)
+4. [Versies](#4)
+5. [Conclusie](#5)
    
+<a href="1"></a>
 ## Hoofdstuk 1 | Opdracht
 Voorafgaand aan het maken van de website hebben we Larissa geinterviewd om haar beter te leren kennen. Hierin heb ik de vraag gesteld welke website voor Larissa slecht te gebruiken is. Als antwoord op deze vraag zei ze dat de website van buienradar slecht te gebruiken is, omdat er gebruik wordt gemaakt van een visuele map zonder tekst. Hierdoor heb ik ervoor gekozen om buienradar voor haar te maken.
 
