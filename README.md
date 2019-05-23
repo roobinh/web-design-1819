@@ -151,7 +151,7 @@ _voor herkansing: zie hoofdstuk 4_
 
 **reflectie op exclusive design patterns**
 - Study Situation
-- 
+  
 In hoofdstuk 2 is te zien hoe ik onderzoek heb gedaan naar Larissa, met onder andere wat ze fijn en niet fijn vind aan een website. Ook heb ik haar persoonlijk goed leren kennen door haar eigen openheid in haar verleden.
 
 - Ignore Conventions
@@ -164,7 +164,7 @@ Geen overbodige informatie, simpel en duidelijk het weer te horen krijgen.
 
 - Add nonsense	
   
-Geluiden als het regent of gaat regenen
+Geluiden op basis van het weer
 
 Al met al was het super leerzaam om samen met een 'echt' persoon te testen. Dit is de beste manier om erachter te komen of je site voldoet aan de juiste functionaliteit en of het te gebruiken is. Ook was het leerzaam om vanuit de ogen van een slechtziende te zien hoe ze het internet gebruiken.
 
