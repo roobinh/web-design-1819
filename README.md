@@ -93,9 +93,10 @@ Functies:
 <a name="4"></a>
 
 ## Hoofdstuk 4 | Herkansing Eindresultaat
-_Omdat Larissa aangaf dat ze de buienradar site niet kon gebruiken, heb ik deze informatie eerst in een tabel verwerkt. Zit was niet voldoende, omdat Larissa de hele tabel door moet om te weten wanneer het gaat regenen. Deze informatie wordt nu back-end berekend, en netjes in text-vorm gezet. Zo weet Larissa precies wanneer het gaat regenen (en voor hoe lang)_
+_Omdat Larissa aangaf dat ze de buienradar site niet kon gebruiken, had ik deze informatie eerst in een tabel verwerkt. Dit was niet voldoende, omdat Larissa de tabel door moet om te weten wanneer het gaat regenen. Deze informatie wordt nu back-end berekend, en netjes in text-vorm gezet. Zo weet Larissa precies wanneer het gaat regenen (en voor hoe lang)_
 
 **4.1 Het product**
+
 <img src="https://i.ibb.co/WDwZPbq/image.png">
 
 Functies:
@@ -137,6 +138,8 @@ Na de laatste review heb ik nog een paar kleine aanpassingen gemaakt:
   - Kleine layout aanpassingen en knoppen groter gemaakt voor telefoongebruik.
   
 <img src="https://i.ibb.co/Dk95kvF/image.png">
+
+_voor herkansing: zie hoofdstuk 4_
 
 <a name="5"></a>
 
