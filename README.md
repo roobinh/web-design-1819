@@ -8,6 +8,8 @@ _Voor het vak Web Design gaan we bezig met een opdracht specifiek voor 1 persoon
 2. [Onderzoek](#2)
 3. [Eindresultaat](#3)
 4. [Versies](#4)
+	- 4.1 - Het product
+	- 4.2 - Waarom nu wel voldoende?
 5. [Conclusie](#5)
    
 <a name="1"></a>
@@ -144,6 +146,17 @@ _voor herkansing: zie hoofdstuk 4_
 <a name="5"></a>
 
 ## Hoofdstuk 5 | Conclusie
+
+**reflectie op exclusive design patterns**
+- Study Situation
+In hoofdstuk 2 is te zien hoe ik onderzoek heb gedaan naar Larissa, met onder andere wat ze fijn en niet fijn vind aan een website. Ook heb ik haar persoonlijk goed leren kennen door haar eigen openheid in haar verleden.
+- Ignore Conventions
+Geluiden als het momenteel regent, of gaat regenen
+- Prioritize identity
+Geen overbodige informatie, simpel en duidelijk het weer te horen krijgen.
+- Add nonsense	
+Geluiden als het regent of gaat regenen
+
 Al met al was het super leerzaam om samen met een 'echt' persoon te testen. Dit is de beste manier om erachter te komen of je site voldoet aan de juiste functionaliteit en of het te gebruiken is. Ook was het leerzaam om vanuit de ogen van een slechtziende te zien hoe ze het internet gebruiken.
 
 Tot slot wil ik Larissa bedanken voor de medewerking.

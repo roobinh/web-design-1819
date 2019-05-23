@@ -18,6 +18,19 @@ document.getElementById('button3').addEventListener("click", buttonDown)
 checkForValidDate();
 checkForValidButton();
 
+//Als het binnen een uur gaat regenen, speel rain.mp3. Else, speel nature.mp3.
+
+var forecast = document.getElementById('rainforecast').innerHTML.split(' ');
+console.log(forecast)
+
+if(forecast[7] == "0") {
+    var audio1 = new Audio('../mp3/rain.mp3')
+} else {
+    var audio1 = new Audio('../mp3/nature.mp3');
+}
+
+audio1.volume = 0.1;
+
 document.onkeydown = function(e) {
     if(e.keyCode == 37) { // left Key
         buttonLeft();
@@ -27,6 +40,9 @@ document.onkeydown = function(e) {
         buttonRight();
     } else if(e.keyCode == 40) { //down key
         buttonDown();
+    } else if(e.keyCode == 9) {
+        console.log("play audio");
+        audio1.play();
     }
 }
 
