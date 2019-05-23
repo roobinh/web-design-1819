@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var OAuth = require('oauth');
+var fs = require('fs')
 
 var app = express();
 var port = process.env.PORT || 1500
@@ -24,7 +25,9 @@ app.get('/home', function(req, res, next) {
 })
 
 app.get('/home/:day', function(req, res, next) {
-    
+
+    var rainfallJSON = fs.readFileSync("./public/json/rainfall.json");
+
     var header = {
         "X-Yahoo-App-Id": "8B56mn42"
     };
@@ -51,6 +54,7 @@ app.get('/home/:day', function(req, res, next) {
             } else {
                 res.render('pages/home', {
                     weatherData: JSON.parse(data),
+                    rainfall: JSON.parse(rainfallJSON),
                     day: req.params.day
                 });
             }

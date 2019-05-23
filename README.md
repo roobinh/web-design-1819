@@ -25,7 +25,6 @@ Zoals eerder vermeld hebben we voor dit vak meerdere mogelijkheden gehad om vrag
 Notes:
 - valkuil: dropdown menu (liever niet, werkt niet goed met screenreader)
 - nvda = goeie screenreader 
-- navigatie onderaan of bovenaan? bovenaan
 - goed: navigatie -> te zien krijgen welke navigatie je al gehad hebt (bv. categorien -> boeken -> roman -> ... )
 - tip: luchtvaartmaatschappijen hebben slechte accessability pages 
 - geen automatisch startende audio/video gebruiken. 
@@ -76,7 +75,7 @@ A: Screenreader alles in nederlands <language attribute = nl> <- belangrijk!
 
 <a name="3"></a>
 
-## Hoofdstuk 3 | Eindresultaat
+## Hoofdstuk 3 | Oud Eindresultaat
 
 <img src="https://i.ibb.co/Dk95kvF/image.png">
 
@@ -93,7 +92,26 @@ Functies:
 
 <a name="4"></a>
 
-## Hoofdstuk 4 | Versies
+## Hoofdstuk 4 | Herkansing Eindresultaat
+_Omdat Larissa aangaf dat ze de buienradar site niet kon gebruiken, heb ik deze informatie eerst in een tabel verwerkt. Zit was niet voldoende, omdat Larissa de hele tabel door moet om te weten wanneer het gaat regenen. Deze informatie wordt nu back-end berekend, en netjes in text-vorm gezet. Zo weet Larissa precies wanneer het gaat regenen (en voor hoe lang)_
+
+**4.1 Het product**
+<img src="https://i.ibb.co/WDwZPbq/image.png">
+
+Functies:
+- (Live) de huidige temperatuur
+- Weten wanneer het precies gaat regenen
+- Weten wanneer de zon ondergaat
+- Mogelijkheid om (live) temperatuur van komende 10 dagen te bekijken
+
+**4.2 Waarom nu wel voldoende?**
+- Het doel van de opdracht is behaald (buienradar bruikbaar maken voor Larissa)
+- De website is persoonlijker
+- Navigeren door de site is extreem eenvoudig. Alle nodige informatie wordt eerst opgelezen, daarna krijg je de mogelijkheid om ook naar komende dagen te kijken. Ook kan Larissa er voor kiezen om meteen naar de button te navigeren (met haar screenreader).
+
+<a name="5"></a>
+
+## Hoofdstuk 5 | Versies
 
 **Versie week 1**
 
