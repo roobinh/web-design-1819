@@ -106,11 +106,13 @@ Functies:
 - Weten wanneer het precies gaat regenen
 - Weten wanneer de zon ondergaat
 - Mogelijkheid om (live) temperatuur van komende 10 dagen te bekijken
+- Geluiden op basis van weer
 
 **4.2 Waarom nu wel voldoende?**
 - Het doel van de opdracht is behaald (buienradar bruikbaar maken voor Larissa)
 - De website is persoonlijker
 - Navigeren door de site is extreem eenvoudig. Alle nodige informatie wordt eerst opgelezen, daarna krijg je de mogelijkheid om ook naar komende dagen te kijken. Ook kan Larissa er voor kiezen om meteen naar de button te navigeren (met haar screenreader).
+- Geluiden toegevoegd.
 
 <a name="5"></a>
 
@@ -149,12 +151,19 @@ _voor herkansing: zie hoofdstuk 4_
 
 **reflectie op exclusive design patterns**
 - Study Situation
+- 
 In hoofdstuk 2 is te zien hoe ik onderzoek heb gedaan naar Larissa, met onder andere wat ze fijn en niet fijn vind aan een website. Ook heb ik haar persoonlijk goed leren kennen door haar eigen openheid in haar verleden.
+
 - Ignore Conventions
+  
 Geluiden als het momenteel regent, of gaat regenen
+
 - Prioritize identity
+
 Geen overbodige informatie, simpel en duidelijk het weer te horen krijgen.
+
 - Add nonsense	
+  
 Geluiden als het regent of gaat regenen
 
 Al met al was het super leerzaam om samen met een 'echt' persoon te testen. Dit is de beste manier om erachter te komen of je site voldoet aan de juiste functionaliteit en of het te gebruiken is. Ook was het leerzaam om vanuit de ogen van een slechtziende te zien hoe ze het internet gebruiken.
