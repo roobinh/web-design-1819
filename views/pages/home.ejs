@@ -51,6 +51,7 @@
 
     var regenBegin = "";
     var regenStop = "";
+    var rainfallText = "";
 
     console.log(rainfall.size);
     for(var i=0; i < rainfall.length;  i++) {
@@ -80,41 +81,49 @@
     }
 
     // regenbegin
-    if(regenBegin < 4) {
-        if(regenBegin == 2) {
-            var begin = "een half uur"
-        } else {
-            var begin = regenBegin + " kwartier"
-        }
+    if(regenBegin == "") {
+        rainfallText = "Het gaat de komende 3 uur niet regenen."
     } else {
-        var uren = Math.round(regenBegin / 4);
-        var kwartieren = regenBegin % 4;
-
-        var begin = uren + " uur en " + kwartieren + " kwartier";
-    }
-
-    // duur van regen 
-    var duur = regenStop - regenBegin;
-
-    if(duur < 4) {
-        if(duur == 2) {
-            var duurText = "een half uur"
+        if(regenBegin < 4) {
+            if(regenBegin == 2) {
+                var begin = "een half uur"
+            } else {
+                var begin = regenBegin + " kwartier"
+            }
         } else {
-            var duurText = duur + " kwartier"
+            var uren = Math.round(regenBegin / 4);
+            var kwartieren = regenBegin % 4;
+    
+            var begin = uren + " uur en " + kwartieren + " kwartier";
         }
-    } else {
-        var uren = Math.round(duur / 4);
-        var kwartieren = duur % 4;
-
-        var duurText = uren + " uur en " + kwartieren + " kwartier";
     }
-
-
-
-    var rainfallText = "Regeninformatie komende 3 uur: Het gaat over " + begin + " regenen. Dit duurt " + duurText;
     
 
+    // duur van regen 
+    if(regenStop == "") {
+        duurText = "nog minimaal een uur";
+    } else {
+        var duur = regenStop - regenBegin;
 
+        if(duur < 4) {
+            if(duur == 2) {
+                var duurText = "een half uur"
+            } else {
+                var duurText = duur + " kwartier"
+            }
+        } else {
+            var uren = Math.floor(duur / 4);
+            var kwartieren = duur % 4;
+    
+            var duurText = uren + " uur en " + kwartieren + " kwartier";
+        }
+    }
+
+    if(day == 0) {
+        if(rainfallText == "") {
+            rainfallText = "Regeninformatie komende 3 uur: Het gaat over " + begin + " regenen. Dit duurt " + duurText;
+        }
+    }
 
     %>
 
@@ -131,7 +140,7 @@
         </span>
     
         <p id="weerbericht">
-            De huidige temperatuur is 
+            De temperatuur is 
             <%- temperature %>
             graden celcius,
         </p>   
@@ -145,9 +154,8 @@
         </div>
 
         <div id="navigatie" style="margin-top: 3em;">
-            <button id="button4">meer informatie</button>
+            <button id="button3">terug naar vandaag</button>
             <button id="button2">dag achteruit</button>
-            <button id="button3">vandaag</button>
             <button id="button1">dag vooruit</button>
         </div>
 

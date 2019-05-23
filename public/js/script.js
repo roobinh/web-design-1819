@@ -14,7 +14,6 @@ var currentParam = window.location.pathname.split('/')[2]; //i.e. 0, 1, 2, 3...
 document.getElementById('button1').addEventListener("click", buttonRight)
 document.getElementById('button2').addEventListener("click", buttonLeft)
 document.getElementById('button3').addEventListener("click", buttonDown)
-document.getElementById('button4').addEventListener("click", buttonUp)
 
 checkForValidDate();
 checkForValidButton();
@@ -67,12 +66,9 @@ function checkForValidButton() {
     if(currentParam == 0) {
         document.getElementById('button2').setAttribute('style', 'display: none');
         document.getElementById('button3').setAttribute('style', 'display: none');
-        document.getElementById('button4').click();
     } else {
         document.getElementById('buttons').setAttribute('style', 'display: none');
     }
-    
-        document.getElementById('button4').setAttribute('style', 'display: none');
 }
 
 })();
